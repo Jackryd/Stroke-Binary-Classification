@@ -26,21 +26,21 @@ When working with classification tasks, a number of different performance metric
 
 Logistic Regression             |  Neural Network
 :-------------------------:|:-------------------------:
-![Image](plots\confusion_matrix_Logistic_Regression.png)  |  ![Image](plots\confusion_matrix_Neural_Network.png)
+![Image](plots/confusion_matrix_Logistic_Regression.png)  |  ![Image](plots/confusion_matrix_Neural_Network.png)
 
 Random Forest             |  Naive Bayes
 :-------------------------:|:-------------------------:
-![Image](plots\confusion_matrix_Random_Forest.png)  |  ![Image](plots\confusion_matrix_Naive_Bayes.png)
+![Image](plots/confusion_matrix_Random_Forest.png)  |  ![Image](plots/confusion_matrix_Naive_Bayes.png)
 
 XGBoost            |
 :-------------------------:|
-![Image](plots\confusion_matrix_XGBoost.png)  
+![Image](plots/confusion_matrix_XGBoost.png)  
 
 
 From these plots, the corresponding F1 score could be comptuted - that is, a metric basically combining the precision and recall of the model.
 
 F1 comparison            |  F1 comparison (zoomed in)
 :-------------------------:|:-------------------------:
-![Image](plots\model_comparison.png)  |  ![Image](plots\model_comparison_norm.png)
+![Image](plots/model_comparison.png)  |  ![Image](plots/model_comparison_norm.png)
 
 These plots show that the models in general are very similar in performance, but that in this case the XGBoost model performed the best. This was a general trend, but sometimes when comparing other metrics some of the other models showed better performance.  
