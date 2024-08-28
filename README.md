@@ -24,18 +24,17 @@ These models were all used due to their ability to capture complex patterns espe
 
 When working with classification tasks, a number of different performance metrics can be evaluated. One can, for example, not always use accuracy as if a dataset is severely unbalanced then always predicting one outcome might give a good accuracy, even though your model is barely doing anything. As such, throughout the process a number of metrics were compared. Bellow are some of the confusion matrices obtained from the models (on the test data).
 
-Logistic Regression             |  Neural Network
+Neural Network |
+:-------------------------:|
+![Image](plots/NN.svg)  
+
+Logistic Regression             |  XGBoost
 :-------------------------:|:-------------------------:
-![Image](plots/confusion_matrix_Logistic_Regression.png)  |  ![Image](plots/NN.svg)
+![Image](plots/confusion_matrix_Logistic_Regression.png)  |  ![Image](plots/confusion_matrix_XGBoost.png)  
 
 Random Forest             |  Naive Bayes
 :-------------------------:|:-------------------------:
 ![Image](plots/confusion_matrix_Random_Forest.png)  |  ![Image](plots/confusion_matrix_Naive_Bayes.png)
-
-XGBoost            |
-:-------------------------:|
-![Image](plots/confusion_matrix_XGBoost.png)  
-
 
 From these plots the precision, accuracy, recall and F1 score was computed. These metrics represent a model's ability to predict both true positives and true negatives, and as such should give a comprehensive overview of the actual model. 
 
