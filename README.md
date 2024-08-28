@@ -26,7 +26,7 @@ When working with classification tasks, a number of different performance metric
 
 Logistic Regression             |  Neural Network
 :-------------------------:|:-------------------------:
-![Image](plots/confusion_matrix_Logistic_Regression.png)  |  ![Image](plots/confusion_matrix_Neural_Network.png)
+![Image](plots/confusion_matrix_Logistic_Regression.png)  |  ![Image](plots/NN.svg)
 
 Random Forest             |  Naive Bayes
 :-------------------------:|:-------------------------:
@@ -37,7 +37,7 @@ XGBoost            |
 ![Image](plots/confusion_matrix_XGBoost.png)  
 
 
-From these plots, the corresponding F1 score could be comptuted - that is, a metric basically combining the precision and recall of the model.
+From these plots the precision, accuracy, recall and F1 score was computed. These metrics represent a model's ability to predict both true positives and true negatives, and as such should give a comprehensive overview of the actual model. 
 
 F1            |  Precision
 :-------------------------:|:-------------------------:
@@ -48,4 +48,8 @@ F1            |  Precision
 :-------------------------:|:-------------------------:
 ![Image](plots/Recall.svg)  |  ![Image](plots/Accuracy.svg)
 
-These plots show that the models in general are very similar in performance, but that in this case the XGBoost model performed the best. This was a general trend, but sometimes when comparing other metrics some of the other models showed better performance.  
+These plots show that the models in general are very similar in performance, but that depending on what metrics you are evaluating, some of the models stand out. 
+
+For instance, the model with the best accuracy was the neural network with 93.3\%, whereas the model with the best recall was the logistic regression with 97.2\% while the neural network scored 87.7\%. The model with the best precision was, however, also the neural network (98.7\%) as well as the F1-score (92.9\%). As a consequence of the different strengths, no algorithm can be deemed the best. Despite, that the neural network attained the best scores on 4 out of 5 evaluation metrics, it achieved the worst recall score. Therefore, it must simply be stated that the different algorithms have different strengths. To determine what algorithm to use, the consequences of incorrect classification must be discussed since long term stroke prediction would be a diagnosis method which could seriously alter a persons life.
+
+To conclude, the different machine learning algorithms created models which behaved in different ways and consequently obtained different scores for the different evaluation metrics. However, all of the developed models showed significant values for all of the metrics and further development of machine learning models for classification of stroke might be important for improving early diagnosis of stroke.  
