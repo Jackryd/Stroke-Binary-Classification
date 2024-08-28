@@ -39,8 +39,13 @@ XGBoost            |
 
 From these plots, the corresponding F1 score could be comptuted - that is, a metric basically combining the precision and recall of the model.
 
-F1 comparison            |  F1 comparison (zoomed in)
+F1            |  Precision
 :-------------------------:|:-------------------------:
-![Image](plots/model_comparison.png)  |  ![Image](plots/model_comparison_norm.png)
+![Image](plots/F1-Score.svg)  |  ![Image](plots/Precision.svg)
+
+
+ Recall            |  Accuracy
+:-------------------------:|:-------------------------:
+![Image](plots/Recall.svg)  |  ![Image](plots/Accuracy.svg)
 
 These plots show that the models in general are very similar in performance, but that in this case the XGBoost model performed the best. This was a general trend, but sometimes when comparing other metrics some of the other models showed better performance.  
